@@ -157,9 +157,9 @@ La diferencia fundamental entre una Máquina de Turing de aceptación y una de c
 
 > Se realizará una máquina de Turing que invierta todos los bits de la cadena  
 > _M_ = {  
->> $\Gamma$ = {0, 1, &EmptySmallSquare;},  
+>> $\Gamma$ = {0, 1, $\square$},  
 > $\Sigma$ = {0, 1},  
-> _b_ = &EmptySmallSquare;,  
+> _b_ = $\square$,  
 > _Q_ = {q0, q1},  
 > _q0_ = q0,  
 > _F_ = {q1},  
@@ -169,10 +169,10 @@ La diferencia fundamental entre una Máquina de Turing de aceptación y una de c
 >
 > <div align="center">
 >
-> | Q  |     0    |     1    |    &EmptySmallSquare;     |
-> |:--:|:--------:|:--------:|:-------------------------:|
-> | q0 | (q0,1,R) | (q0,0,R) | (q1,&EmptySmallSquare;,L) |
-> | q1 |     -    |     -    |             -             |
+> | Q  |     0    |     1    |    $\square$     |
+> |:--:|:--------:|:--------:|:----------------:|
+> | q0 | (q0,1,R) | (q0,0,R) | (q1,$\square$,L) |
+> | q1 |     -    |     -    |         -        |
 > </div>
 
 >  Símbolos: `0 = 00`, `1 = 01`, `▢ = 10`  
@@ -180,8 +180,8 @@ La diferencia fundamental entre una Máquina de Turing de aceptación y una de c
 >  Movimientos: `R = 0`, `L = 1` 
 > <div align="center">
 >
-> | Q  |     0    |     1    |    &EmptySmallSquare;     |
-> |:--:|:--------:|:--------:|:-------------------------:|
+> | Q  |     0    |     1    |    $\square$     |
+> |:--:|:--------:|:--------:|:----------------:|
 > | 0 | 0010 | 0000 | 1101 |
 > | 1 |   -  |   -  |   -  |
 > </div>
@@ -368,3 +368,5 @@ Palabra inicial: 01010101b
 
 Palabra final: 10101010b
 ```
+
+> Reflexión: La Máquina de Turing Universal (MTU) sentó las bases de las computadoras modernas al inspirar el concepto de "computadora programable". Esta teoría demostró que los algoritmos podían tratarse y procesarse simplemente como datos, permitiendo que un solo dispositivo simulara cualquier cálculo en lugar de estar limitado a una tarea específica. Eso es, en escencia, una computadora actual: un sistema que sea capaz de procesar los programas y los datos como lo mismo.
