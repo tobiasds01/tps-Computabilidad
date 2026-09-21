@@ -171,7 +171,7 @@ La diferencia fundamental entre una Máquina de Turing de aceptación y una de c
 >
 > | Q  |     0    |     1    |    $\square$     |
 > |:--:|:--------:|:--------:|:----------------:|
-> | q0 | (q0,1,R) | (q0,0,R) | (q1,$\square$,L) |
+> | q0 | (q0,1,R) | (q0,0,R) | (q1, $\square$, L) |
 > | q1 |     -    |     -    |         -        |
 > </div>
 
