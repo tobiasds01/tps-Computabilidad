@@ -5,11 +5,12 @@ estados = bidict({"0": "0", "1": "1"})
 movimientos = bidict({"R": "0", "L": "1"})
 transiciones = ['0000010', '0010000', '0101101']
 
-w = '01010101b'
+w = 'b01010101b'
 estadoActual = '0'
 posicionDelCabezal = 0
 
 hayTransicion = True
+palabraCodificada = ""
 
 def escribirCinta(entrada, estadoActual, caracterCodificado):
     print(f"{entrada}${estadoActual}{caracterCodificado}#{'#'.join(transiciones)}")
@@ -36,6 +37,13 @@ def realizarMovimientoDelCabezal(direccion):
 
 print(f"Palabra inicial: {w}")
 print("")
+
+
+
+def codificarPalabra(w):
+    while w.lenght() > 0:
+        caracter = w[0]
+
 
 while hayTransicion:
     caracterActual = w[posicionDelCabezal]

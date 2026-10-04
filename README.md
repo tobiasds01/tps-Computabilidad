@@ -97,11 +97,55 @@ El lenguaje $L = \{a^n b^{2n} \mid n \ge 1\}$ exige que por cada letra 'a', exis
 
 La diferencia fundamental entre una Máquina de Turing de aceptación y una de cálculo radica en el objetivo de su ejecución. Por un lado, la primera funciona como un **validador** que **indica si una cadena pertenece a un lenguaje determinado**, llegando a un estado de aceptación o rechazo sin importar demasiado lo que quede escrito en la cinta. Por otro lado, la segunda actúa como una **calculadora** o procesador de datos, y su finalidad es **transformar una entrada** inicial para dejar guardado en la cinta el resultado final de una función.
 
+---
 
+## TP 4: Máquinas de Turing Computables (MTC)
 
+En este trabajo práctico se implementan y prueban diversas Máquinas de Turing Computables (MTC) para realizar operaciones aritméticas, manipular cadenas y tomar decisiones.
 
+Se utilizaron como muestra las actividades **1, 10 y 17**:
 
+### Actividad 1
 
+Calcular la imagen especular de una cadena definida sobre {a, b}, es decir, f(w)=reverso(w). Ejemplos: f(aabb)=bbaa y f(aba)=aba
+
+#### Grafo
+![Grafo P1](TP4-MTC/mtc_grafos/P1.jpg)
+
+#### Pruebas
+![Prueba P1](TP4-MTC/pruebas/prueba%20ejercicio%20(1).png)
+
+---
+
+### Actividad 10
+
+Decidir si m < n, a^nb^m / n, m > 0, escribiendo en la cinta T (true) o F (false)
+
+#### Grafo
+![Grafo P10](TP4-MTC/mtc_grafos/P10.jpg)
+
+#### Pruebas
+![Prueba P10](TP4-MTC/pruebas/prueba%20ejercicio%20(10).png)
+
+---
+
+### Actividad 17
+
+Dadas dos cadenas de palotes, separadas por el símbolo * defina y construya una MT que decida si la primera cadena es submúltiplo de la segunda, y cuántas veces. Pruebe la solución hallada con las siguientes cadenas:
+* `|||*||||||` (es submúltiplo, dos veces)
+* `||*|||||` (no es submúltiplo)
+
+#### Grafo
+![Grafo P17](TP4-MTC/mtc_grafos/P17.jpg)
+
+#### Pruebas
+![Prueba P17](TP4-MTC/pruebas/prueba%20ejercicio%20(17).png)
+
+---
+
+> 📄 **Ver todas las actividades:** Para consultar la totalidad de las actividades (1 a 17) con todos sus grafos y pruebas correspondientes, ver [TP4-MTC/README.md](TP4-MTC/README.md).
+
+---
 
 ## TP5: Máquina de Turing Universal
 
